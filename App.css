@@ -1,0 +1,308 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* Add fonts from the app's server 
+    @font-face {                
+      font-family: 'FontName';
+      src: url('FontName.woff2') format('woff2');
+    } 
+    ...or hosted services like Google Fonts 
+    @import url(//fonts.googleapis.com/css?family=Font+Name);
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Lobster+Two:wght@700&family=Ubuntu:wght@300;700&display=swap');
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+  /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+        /* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */         
+  
+  /* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+:root {
+    --sunsetorange:#f5985f;
+    --slightlydarkerlightorange:#f3ab59;
+    --lightorange:#f5bc7d;
+    --sunsetyellow:#fff689;
+    --skydrkblue:#385281;
+    --greybrown:#585857;
+    --bluetransparent:rgba(56,82,129,0.8);
+    --orangetransparent:rgba(245,152,95,0.8);
+
+
+    /* --custom-embellishment-name:; */
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {} or :root {} */ 
+    background: url(images/baker-sunset-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin:0 auto;
+    max-width:1300px;
+    min-width:1100px;
+    padding:0;
+
+    /* color:; */
+    font-family:'Ubuntu', sans-serif; /* Define with at least one font name and its related generic family name.*/
+    margin: 10%;
+    max-width: 90%;
+    padding:0;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    background-color:var(--sunsetorange);
+    text-align:center;
+    font-family:'Lobster Two', cursive; /* Define with at least one font name and its related generic family name.*/
+    color:var(--skydrkblue);
+    margin: 5%;
+    max-width: 90%;
+    padding: 10px;
+    font-size:larger;
+  }
+  main {
+    background-color:var(--lightorange);
+    /* font-family:; Define with at least one font name and its related generic family name. */
+    color:var(--greybrown);
+    margin: 10%;
+    padding:20px;
+  }
+  section {}
+    article {}
+      #topic1 {}
+      #topic2 {}
+  div {}
+  aside {}
+  footer {
+    background-color:var(--bluetransparent);
+    /* font-family:; Define with at least one font name and its related generic family name. */
+    color:var(--sunsetyellow);
+    margin: 10%;
+    max-width: 90%;
+    padding:20px;
+  }
+  
+  .alignright {float:right; width:150px; border:2px solid gray;}
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    font-family:'Lobster Two', cursive; /* Define with at least one font name and its related generic family name.*/
+    margin: 0%;
+    padding:0px;
+    text-align:center;
+  }
+  nav a {
+    background-color:var(--skydrkblue);
+    border:1px solid var(--sunsetyellow);
+    border-radius:8px 8px 0 0; 
+    color:var(--sunsetyellow);
+    font-size:1.5em;
+    font-weight:bold;
+    margin-right:3px;
+    padding: 3px 20px 5px 20px;
+    text-decoration:none;
+  }
+  nav a:hover {
+    background-color:var(--sunsetyellow);
+    color:var(--skydrkblue);
+  }
+  
+  /*  -----  Typography  ----- */
+  p {
+    font-family:'Ubuntu', sans-serif; 
+}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {} 
+  h1 {
+    font-family:'Lobster Two', cursive;
+}
+  h2 {
+    font-family:'Lobster Two', cursive;
+  }
+  h3 {
+    font-family:'Ubuntu', sans-serif; 
+  }
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    width: 98%;
+  }
+  caption {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lobster Two', cursive;
+    margin: 15px;
+  }
+  thead {
+    background-color: var(--skydrkblue);
+    font-size: 110%;
+    color: var(--lightorange);
+  }
+  tbody {
+    background-color: var(--lightorange);
+  }
+  tfoot {}
+  tr td {}
+    tr:nth-child(even) td {background-color:var(--slightlydarkerlightorange);}
+    tr:nth-child(odd) td {background-color:var(--lightorange);}
+  th, td {
+    border: 3px solid var(--skydrkblue);
+    padding: 15px;;
+  }
+  th {}
+  td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+  fieldset {
+    /* border:; */
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:1%;
+    color:var(--skydrkblue);
+  }
+  legend {
+    /* color:; */
+    font-size:110%;
+    font-weight:bold;
+  }
+  label {
+    /* display:; */
+    margin-top: 5%;
+    font-weight:bold;
+  }
+  label.required:after {
+  content:"required *";
+  color:red;
+  font-size:smaller;
+  }
+  input, button, textarea, select {
+    font-size:105%;
+    padding:2%;
+    font-family:inherit;
+    margin: 1%;
+    color:var(--skydrkblue);
+  }
+  /* input {} */
+  output {}
+  meter {}
+  progress {}
+  /* select {} */
+    optgroup {}
+    option {}
+  /* textarea {} */
+  :focus{
+    background-color:var(--sunsetyellow);
+  }
+  :required {
+    border:5px solid green;
+  } 
+  ::placeholder {
+    color:var(--greybrown);
+  }
+  
+  /* ----- Media ----- */
+  figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {}
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
