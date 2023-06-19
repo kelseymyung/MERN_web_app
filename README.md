@@ -4,7 +4,7 @@
 This web application was developed with instruction and guidance from Oregon State University's Web Development course (CS 290) in Spring 2023. 
 
 ### This website cannot be launched from the provided code alone!
-This site relies on access to a personal MongoDB account. The username and password has been redacted for privacy purposes. Additionally, node_modules is not included in this repository due to file size. 
+This site relies on access to a personal MongoDB account. The username and password have been redacted for privacy purposes. Additionally, node_modules is not included in this repository due to file size. 
 
 ### Features include:
 Multipage web site with navigation tools
